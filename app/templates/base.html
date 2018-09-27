@@ -1,0 +1,15 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Instant Query</title>
+      {% else %}
+      <title>Welcome to Instant Query</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>InstaQuery: <a href="/">Home</a></div>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </body> 
+</html>
